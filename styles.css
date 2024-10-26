@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #FFF9F5;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 0rem;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+h4 {
+    margin: 0px;
+    padding: 7px;
+    font-size: 15px;
+    margin-top: -16px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+header>img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*
+nav {
+    position: relative;
+}
+*/
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+    border-width: 5px 5px 5px 5px;
+    margin: 20px 5px 10px 5px;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+nav ul a:hover {
+    color: #800020;
+    text-decoration: underline;
+}
+
+nav::before,
+nav::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    /* Thickness of the lines */
+    background-color: #333;
+    /* Line color */
+    position: relative;
+    left: 0;
+}
+
+nav::before {
+    top: 21px;
+    /* Position the top line */
+}
+
+nav::after {
+    bottom: 12px;
+    /* Position the bottom line */
+}
+
+
+section {
+    display: flex;
+    gap: 2rem 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+article {
+    flex: 1;
+    border-radius: 1rem;
+}
+
+.container {
+    background-image: url(photos/zoriana-stakhniv-PUVgHyBgZn8-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.hero {
+    background-color: hsl(0, 0%, 0%, 0.403);
+}
+
+.hero h1 {
+    color: #ffffff;
+    margin-top: 8rem;
+    margin-bottom: -3px;
+}
+
+.hero h3 {
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 0rem;
+}
+
+.hero p {
+    color: #ffffff;
+    margin-top: 1rem;
+    margin-bottom: 8rem;
+    font-size: 13px;
+}
+
+#unique {
+    margin-top: -8rem;
+    margin-bottom: 8rem;
+}
+
+.container:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all is ease;
+
+}
+
+article img {
+    max-width: 100%;
+}
+
+main article {
+    padding-left: 2rem;
+    padding-right: 1rem;
+}
+
+article p {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-top: 2px solid #000;
+    margin-top: -2rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+footer div {
+    flex: 1;
+}
+
+footer .copywriting p {
+    margin: 0;
+    padding-right: 1rem;
+    font-size: 0.9rem;
+    text-align: right;
+    margin-right: -25px;
+    margin-top: -15px;
+    /*margin-left: 58rem;
+    margin-top: 0rem;*/
+    /* Adjust margin-left instead of margin-right to move it from the left */
+    /*align-self: flex-start;*/
+    /* Only if you're using Flexbox on the parent container */
+}
+
+
+
+
+
+
+
+/* Grid layout for the three cards */
+.content-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Three columns */
+    gap: 60px;
+    /* Space between the columns */
+    margin-bottom: 50px;
+    padding: 0px;
+}
+
+/* Styling for each card */
+.card {
+    background-color: white;
+    padding: 0px;
+    border-radius: 15px;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    text-align: left;
+    transition: transform 0.3s ease;
+    /* Smooth hover effect */
+}
+
+/* Image styling */
+.card img {
+    width: 100%;
+    /*height: auto;*/
+    border-radius: 10px 10px 0 0;
+    /* Rounded corners for the image */
+    margin-bottom: 15px;
+}
+
+/* Title styling */
+.card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Text styling */
+.card p {
+    font-size: 13px;
+    color: #000000;
+    margin: 0px;
+    padding: 16px;
+    margin-top: -10px;
+    margin-bottom: 1px;
+
+}
+
+/* Button styling */
+.card button {
+    background-color: #000000;
+    color: #c3c7c6;
+    border: none;
+    padding: 16px 80px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    margin-top: -8px;
+    margin-bottom: 12px;
+    margin-right: 0px;
+    margin-left: 11px;
+}
+
+/* Hover effect for the card */
+.card:hover {
+    transform: translateY(-5px);
+    /* Slightly lifts the card on hover */
+}
+
+/* Hover effect for the button */
+.card button:hover {
+    background-color: #555;
+    /* Darkens button on hover */
+}
+
+
+
+h4::after {
+    content: "";
+    display: block;
+    width: 98%;
+    height: 3px;
+    /* Thickness of the lines */
+    background-color: #333;
+    /* Line color */
+    position: relative;
+    left: -5px;
+    border-radius: 10px;
+    margin-top: 2px;
+}
+
+h4::after {
+    bottom: -8px;
+    /* Position the bottom line */
+}
+
+.small-logo {
+    margin-left: -10px;
+}
