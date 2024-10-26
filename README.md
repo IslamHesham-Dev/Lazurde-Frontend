@@ -21,4 +21,4 @@ This project was created as a practical application of key front-end development
 - **Consistent and visually appealing design**
 
 ## Screenshot
-![Lazurde Home Page](path/to/your/screenshot.png)
+![Lazurde Home Page](screenshot/screenshot.png)
